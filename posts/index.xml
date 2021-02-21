@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 博客</title>
+    <link>https://xna00.github.io/my-blog/posts/</link>
+    <description>Recent content in Posts on 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Dec 2020 12:51:29 +0800</lastBuildDate><atom:link href="https://xna00.github.io/my-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>passive event listeners.md</title>
+      <link>https://xna00.github.io/my-blog/posts/passive-event-listeners/</link>
+      <pubDate>Tue, 29 Dec 2020 12:51:29 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/passive-event-listeners/</guid>
+      <description>passive event listeners 为了提高滚动性能，设置了{passive: true}后，表示 listener 永远不会调用 preventDefault()。如果 listener 仍然调用了这个函数，客户端将会忽略它并抛出一个控制台警告。
+这释放了浏览器，无需等待JavaScript就可以立即响应滚动，从而确保了用户可靠的流畅滚动体验。
+给svg的元素设置touchstart事件的listener，结果有时响应，有时不响应，设置了passive:true后就正常响应了。</description>
+    </item>
+    
+    <item>
+      <title>一种checkbox.md</title>
+      <link>https://xna00.github.io/my-blog/posts/%E4%B8%80%E7%A7%8Dcheckbox/</link>
+      <pubDate>Tue, 15 Dec 2020 15:24:18 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/%E4%B8%80%E7%A7%8Dcheckbox/</guid>
+      <description>参考Vuetify，实现一种checkbox </description>
+    </item>
+    
+    <item>
+      <title>移动端的hover问题.md</title>
+      <link>https://xna00.github.io/my-blog/posts/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9A%84hover%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Tue, 15 Dec 2020 12:38:42 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9A%84hover%E9%97%AE%E9%A2%98/</guid>
+      <description>移动端中的hover问题 移动端中，如果给元素添加hover效果，触摸元素，会触发hover效果（safari也是吗？），手指离开后，依然保持hover状态。
+使用媒体查询：
+@media (any-hover: hover) { a:hover { background: yellow; } PC支持hover事件，移动端不支持？
+经测试，手机接上鼠标后，any-hover和hover媒体查询均失效，触摸依然会触发和维持hover效果。</description>
+    </item>
+    
+    <item>
+      <title>build出错.md</title>
+      <link>https://xna00.github.io/my-blog/posts/build%E5%87%BA%E9%94%99/</link>
+      <pubDate>Wed, 09 Dec 2020 05:33:50 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/build%E5%87%BA%E9%94%99/</guid>
+      <description>npm run build出错 npm run dev正常，npm run build报错   代码链接
+https://gitee.com/xna00/btfly-ui/tree/master/ https://gitee.com/xna00/btfly-ui.git
+  运行步骤
+ npm install npm run build  操作系统：ubuntu
+node版本：v14.15.1
+npm版本：6.14.8
+在mac上测试，结果一样
+  错误复现步骤
+ git clone https://gitee.com/xna00/btfly-ui.git cd btfly-ui npm install npm run build  报错信息
+[vite] Build errored out. SyntaxError: Invalid end tag. at createCompilerError (/home/ubuntu/btfly-ui/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:16:19) at emitError (/home/ubuntu/btfly-ui/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:1178:29) at parseChildren (/home/ubuntu/btfly-ui/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:629:25) at parseElement (/home/ubuntu/btfly-ui/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:807:22) at parseChildren (/home/ubuntu/btfly-ui/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:639:28) at parseElement (/home/ubuntu/btfly-ui/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js:807:22) at parseChildren (/home/ubuntu/btfly-ui/node_modules/@vue/compiler-core/dist/compiler-core.</description>
+    </item>
+    
+    <item>
+      <title>内联元素脱离标准流变块元素.md</title>
+      <link>https://xna00.github.io/my-blog/posts/%E5%86%85%E8%81%94%E5%85%83%E7%B4%A0%E8%84%B1%E7%A6%BB%E6%A0%87%E5%87%86%E6%B5%81%E5%8F%98%E5%9D%97%E5%85%83%E7%B4%A0/</link>
+      <pubDate>Sat, 21 Nov 2020 05:38:19 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/%E5%86%85%E8%81%94%E5%85%83%E7%B4%A0%E8%84%B1%E7%A6%BB%E6%A0%87%E5%87%86%E6%B5%81%E5%8F%98%E5%9D%97%E5%85%83%E7%B4%A0/</guid>
+      <description>内联元素脱离标准流后，似乎会变成块元素。 https://codepen.io/xna00/pen/MWeMmbv</description>
+    </item>
+    
+    <item>
+      <title>测试总结.md</title>
+      <link>https://xna00.github.io/my-blog/posts/%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 21 Nov 2020 01:46:01 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93/</guid>
+      <description>测试总结   checkbox被勾选的写法
+ checked=false checked=true checked=&amp;quot;&amp;quot; checked    .item {width: 100%}
+  Blink内核的浏览器
+ 新版Opera Chrome    DOCTYPE
+   告诉浏览器使用的是HTML5规范 告诉浏览器用标准模式渲染页面 微软发布IE5，未遵循W3C标准。发布IE6时想遵循W3C标准，又想兼容IE5的页面，于是给IE6加入怪异模式和标准模式 对于老页面，默认是怪异模式，新页面顶部加，告诉浏览器使用“标准模式”      a标签的属性
+  @import引入CSS
+ 必须放在style标签里或CSS文件中 必须放在CSS文件开头    CSS的所有选择器
+  first-of-type
+  !important
+  content-box是标准盒模型
+  外边距合并
+ 只有块元素的外边距会有合并，内联元素和inline-block不会 上下合并，左右不合并 加边框，加padding，里面添加行内内容，创建块级格式化上下文等方法，都可以阻止父子外边距合并    hsl颜色
+  line-height</description>
+    </item>
+    
+    <item>
+      <title>Vue的.sync修饰符.md</title>
+      <link>https://xna00.github.io/my-blog/posts/vue%E7%9A%84.sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</link>
+      <pubDate>Thu, 15 Oct 2020 15:43:54 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/vue%E7%9A%84.sync%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
+      <description>Vue的.sync修饰符 有些时候，需要对一个props“双向绑定”，但是真正的双向绑定会带来维护上的问题，因为子组件可以变更父组件，且在父组件和子组件都没有明显的变更来源。
+这时候可以用事件实现，在子组件中触发事件
+this.$emit&#39;update:title&#39;, newTitle)
+在父组建中监听事件
+&amp;lt;text-document v-bind:title=&amp;quot;doc.title&amp;quot; v-on:update:title=&amp;quot;doc.title = $event&amp;quot; &amp;gt;&amp;lt;/text-document&amp;gt; 为了方便起见，我们为这种模式提供一个缩写，即 .sync 修饰符：
+&amp;lt;text-document v-bind:title.sync=&amp;quot;doc.title&amp;quot;&amp;gt;&amp;lt;/text-document&amp;gt;
+也就是说，.sync只是个语法糖</description>
+    </item>
+    
+    <item>
+      <title>CSS知识总结.md</title>
+      <link>https://xna00.github.io/my-blog/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <description>CSS知识总结 简介 CSS，全称Cascading Style Sheets，层叠样式表。CSS2.1是使用最广泛的版本。
+了解浏览器对CSS的支持 caniuse.com
+调试CSS  W3C验证器 VScode/WebStorm提示 开发者工具警告 Border调试法  查资料  MDN CSS tricks 张鑫旭博客  练习素材 标准制定者 W3C。CSS2.1标准
+基本概念 文档流   流动方向
+inline，从左到右，到最右边换行
+block，从上到下，每个都另起一行
+inline-block， 从左到右
+  宽度
+inline宽度是内部inline元素宽度的总和，不能用width指定
+block可用width指定
+inline-block结合前两者，可用width指定
+  高度
+inline高度由line-height间接确定
+block高度由内部文档流元素决定，可用height指定
+inline-block也可以设置height
+  overflow 可以分为overflow-x和overflow-y
+ visible直接显示溢出部分 hidden直接隐藏 scroll永远显示滚动条 auto灵活显示滚动条  脱离文档流  float position：absolute | fixed  两种盒模型  content-box border-box  margin合并 合并的情形  父子margin合并 兄弟margin合并  如何阻止合并  父子合并用padding/border挡住 父子合并用overflow：hidden挡住 父子合并，display：flex 兄弟合并：inline-block  基本单位 长度单位  px em相对于自身font-size的倍数 百分数 整数 rem vw vh  颜色  十六进制 #FF6600，简写为#F60 rgb/rgba hsl  布局 分类  固定布局 自适应布局 两种混合  用什么CSS布局  需要兼容IE9，用float，给父元素添加clearfix 不需要兼容IE9  如果只兼容最新浏览器，用gird 否则，用flex   必要时要用到负margin  float布局  子元素加float，left，width 父元素加 .</description>
+    </item>
+    
+    <item>
+      <title>HTML入门笔记1.md</title>
+      <link>https://xna00.github.io/my-blog/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/</guid>
+      <description>HTML入门笔记1 HTML的发明人 Tim Berners-Lee
+HTML起手 写一个!，然后按Tab即可。如果是中文网页，将lang修改为zh-CN。meta标签里写元数据。&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;表示字符集是UTF-8，&amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;&amp;gt;表示，如果是IE浏览器，用最新内核。
+常用的章节标签 h1~h6标题，h1最大。
+section章节
+article文章
+p段落
+header头部
+footer脚部
+main主要内容
+aside旁支内容
+div分块
+全局属性 全局属性是指所有元素都有的属性
+class类
+contenteditable内容可编辑
+hidden隐藏
+id不到万不得已，不要用id。在js中，用id可以直接调用到这个元素，如xxx.style.border = &amp;lsquo;&#39;。但不能是全局属性。
+style样式。元素的style属性优先级高。
+tabindex设置数值，控制tab的顺序，0表示最后一个，-1表示访问不到
+title鼠标悬停显示
+默认样式 ​	可以覆盖默认样式
+​	取消table中间的空白：
+table { border-collapse: collapse; border-spacing: 0; } 内容标签   ol + li
+有方向的列表
+  ul + li
+没有方向的列表
+  dl + dt + dd
+dl description list
+dt description term
+dd
+  pre</description>
+    </item>
+    
+    <item>
+      <title>HTML常用标签.md</title>
+      <link>https://xna00.github.io/my-blog/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>HTML常用标签 a标签 属性   href
+  网址
+ https://* http://* //:* 根据当前协议    路径
+ 绝对路径 相对路径    伪协议
+ JavaScript:代码; mailto:邮箱 tel:手机号    id
+href=#xxx 跳转到锚点
+    target
+  内置名字
+ _blank 新标签页 _top 最顶层 _parent 当前iframe的父页面 _self 自己    window和ifrme都可以命名。target=xxx,如果有一个名叫xxx的窗口，就在这个窗口里打开；如果没有，就创建一个窗口，名叫xxx，并打开链接。
+iframe标签可以指定名字
+    download
+不打开页面,下载页面,但是一些浏览器不支持。
+  作用  跳转到外部页面 跳转到内部锚点 跳转到邮箱或电话等  img标签 属性  src图片的url alt如果图片加载失败，替换为文字 height和width设置高和宽，同时设置可能会使图片变形。只设置一个，图片会按比例缩放。  作用 ​	发出get请求，展示一个图片</description>
+    </item>
+    
+    <item>
+      <title>JavaScript的故事.md</title>
+      <link>https://xna00.github.io/my-blog/posts/javascript%E7%9A%84%E6%95%85%E4%BA%8B/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/javascript%E7%9A%84%E6%95%85%E4%BA%8B/</guid>
+      <description>JavaScript 历史 肇始于网景 1993年，伊利诺伊大学厄巴纳-尚佩恩分校的国家超级电脑应用中心（NCSA）发表了NCSA Mosaic，这是最早流行的图形接口网页浏览器，它在万维网的普及上发挥了重要作用。1994年，一家名为Mosaic Communications的公司在加州芒廷维尤成立了，并雇用了许多原来的NCSA Mosaic开发者用来开发Mosaic Netscape，该公司的目标是取代NCSA Mosaic成为世界第一的网页浏览器。第一个版本的网页浏览器Mosaic Netscape 0.9于1994年底发布。在四个月内，已经占据了四分之三的浏览器市场，并成为1990年代互联网的主要浏览器。为避免NCSA的商标所有权问题，该浏览器于同年更名为Netscape Navigator，该公司命名为Netscape Communications。网景预见到网络需要变得更动态。公司的创始人马克·安德森认为HTML需要一种胶水语言，让网页设计师和兼职程序员可以很容易地使用它来组装图片和插件之类的组件，且代码可以直接编写在网页标记中。
+1995年，网景招募了布兰登·艾克，目标是把Scheme语言嵌入到Netscape Navigator浏览器当中。但更早之前，网景已经跟昇阳合作在Netscape Navigator中支持Java，这时网景内部产生激烈的争论。后来网景决定发明一种与Java搭配使用的辅助脚本语言并且语法上有些类似，这个决策导致排除了采用现有的语言，例如Perl、Python、Tcl或Scheme。为了在其他竞争提案中捍卫JavaScript这个想法，公司需要有一个可以运作的原型。艾克在1995年5月仅花了十天时间就把原型设计出来了。
+最初命名为Mocha，1995年9月在Netscape Navigator 2.0的Beta版中改名为LiveScript，同年12月，Netscape Navigator 2.0 Beta 3中部署时被重命名为JavaScript，当时网景公司与昇阳电脑公司组成的开发联盟为了让这门语言搭上Java这个编程语言“热词”，因此将其临时改名为JavaScript，日后这成为大众对这门语言有诸多误解的原因之一。
+微软采纳 JavaScript推出后在浏览器上大获成功，微软公司在不久后就为Internet Explorer 3浏览器推出了JScript，以与处于市场领导地位的网景产品同台竞争。JScript也是一种JavaScript实现，这两个JavaScript语言版本在浏览器端共存意味着语言标准化的缺失，发展初期，JavaScript的标准并未确定，同期有网景的JavaScript，微软的JScript双峰并峙。除此之外，微软也在网页技术上加入了不少专属对象，使不少网页使用非微软平台及浏览器无法正常显示，导致在浏览器大战期间网页设计者通常会把“用Netscape可达到最佳效果”或“用IE可达到最佳效果”的标志放在主页。随着Internet Explorer 4的发布，微软引入了动态HTML的概念，但语言实现和不同专有化的文档对象模型的差异仍然存在，成为网络上普及使用JavaScript的阻碍。
+标准化 1996年11月，网景正式向ECMA（欧洲计算机制造商协会）提交语言标准。1997年6月，ECMA以JavaScript语言为基础制定了ECMAScript标准规范ECMA-262。JavaScript成为了ECMAScript最著名的实现之一。除此之外，ActionScript和JScript也都是ECMAScript规范的实现语言。尽管JavaScript作为给非程序人员的脚本语言，而非作为给程序人员的脚本语言来推广和宣传，但是JavaScript具有非常丰富的特性。
+缺陷   不适合开发大型程序
+  非常小的标准库
+  null和undefined
+  全局变量难以控制
+  自动插入行尾分号
+  比如，下面这个函数根本无法达到预期的结果，返回值不是一个对象，而是undefined。
+ 　function(){
+　return { i=1 };
+　}
+ 原因是解释器自动在return语句后面加上了分号。
+ 　function(){
+　return; { i=1 };</description>
+    </item>
+    
+    <item>
+      <title>jQuery设计思想.md</title>
+      <link>https://xna00.github.io/my-blog/posts/jquery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/jquery%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3/</guid>
+      <description>jQuery设计思想 一、选择网页元素 CSS选择器 $(document) //选择整个文档对象  $(&amp;#39;#myId&amp;#39;) //选择ID为myId的网页元素  $(&amp;#39;div.myClass&amp;#39;) // 选择class为myClass的div元素  $(&amp;#39;input[name=first]&amp;#39;) // 选择name属性等于first的input元素 jQuery特有的表达式 $(&amp;#39;a:first&amp;#39;) //选择网页中第一个a元素  $(&amp;#39;tr:odd&amp;#39;) //选择表格的奇数行  $(&amp;#39;#myForm :input&amp;#39;) // 选择表单中的input元素  $(&amp;#39;div:visible&amp;#39;) //选择可见的div元素  $(&amp;#39;div:gt(2)&amp;#39;) // 选择所有的div元素，除了前三个  $(&amp;#39;div:animated&amp;#39;) // 选择当前处于动画状态的div元素 二、改变结果集 $(&amp;#39;div&amp;#39;).has(&amp;#39;p&amp;#39;); // 选择包含p元素的div元素  $(&amp;#39;div&amp;#39;).not(&amp;#39;.myClass&amp;#39;); //选择class不等于myClass的div元素  $(&amp;#39;div&amp;#39;).filter(&amp;#39;.myClass&amp;#39;); //选择class等于myClass的div元素  $(&amp;#39;div&amp;#39;).first(); //选择第1个div元素  $(&amp;#39;div&amp;#39;).eq(5); //选择第6个div元素 $(&amp;#39;div&amp;#39;).next(&amp;#39;p&amp;#39;); //选择div元素后面的第一个p元素  $(&amp;#39;div&amp;#39;).parent(); //选择div元素的父元素  $(&amp;#39;div&amp;#39;).closest(&amp;#39;form&amp;#39;); //选择离div最近的那个form父元素  $(&amp;#39;div&amp;#39;).children(); //选择div的所有子元素  $(&amp;#39;div&amp;#39;).siblings(); //选择div的同级元素 三、链式操作 $(&amp;#39;div&amp;#39;) //找到div元素  .</description>
+    </item>
+    
+    <item>
+      <title>JS 对象基本用法.md</title>
+      <link>https://xna00.github.io/my-blog/posts/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/js-%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>JS 对象基本用法 对象的属性名是字符串，有时候可以省略引号。
+声明对象  obj = {} 使用Object构造  删除对象的属性 delete obj.xxx
+查看对象的属性  obj.xxx obj[&amp;lsquo;xxx&amp;rsquo;] obj[name] 要对name求值 Object.keys(obj) console.dir(obj)  修改或增加对象的属性  直接赋值 批量赋值 Object.assign()  如果要修的属性不存在，就增加属性。
+&amp;lsquo;name&amp;rsquo; in obj和obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;)  &amp;lsquo;name&amp;rsquo; in obj 包括原型里的属性 obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;) 不包括原型里的属性  </description>
+    </item>
+    
+    <item>
+      <title>JS函数的执行时机.md</title>
+      <link>https://xna00.github.io/my-blog/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
+      <description>JS函数的执行时机 一、6个6 let i = 0 for(i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) } 以上代码会打印出6个6，因为console.log会在for循环结束后执行，此时i的值是6
+二、打印0、1、2、3、4、5 for(let i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) } 以上代码会打印出0、1、2、3、4、5。i是在for里面声明的，有块级作用域。每次循环都会创建一个新的i。
+三、另一个打印0、1、2、3、4、5的方法 let i = 0 for(i = 0; i&amp;lt;6; i++){ !function() { let j = i; setTimeout(() =&amp;gt; { console.log(j) },0) }() } </description>
+    </item>
+    
+    <item>
+      <title>JS的基本语法.md</title>
+      <link>https://xna00.github.io/my-blog/posts/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/js%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      <description>JS的基本语法 表达式和语句  表达式一般有值 语句可能有值，也可能没有 并不绝对  标识符 第一个字符，可以是Unicode字母或$或_或 中文。之后的字符，还可以是数字。
+if else 两种比较好的写法
+  if (表达式) { 语句 } else if (表达式) { 语句 } else { 语句 }   function fn(){ if ( ) { return } if ( ) { return } return }   switch switch (fruit) { case &amp;#34;banana&amp;#34;: // ...  break; case &amp;#34;apple&amp;#34;: // ...  break; default: // ... } 循环语句 while(表达式) { } for(语句1; 表达式2; 语句3){ }  break跳出最近的一层循环 continue跳过当前的这次循环  label foo: { console.</description>
+    </item>
+    
+    <item>
+      <title>Vue安装.md</title>
+      <link>https://xna00.github.io/my-blog/posts/vue%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/vue%E5%AE%89%E8%A3%85/</guid>
+      <description>Vue安装 安装 点击
+Vue的两个版本 Vue的编译器，用来将模板字符串编译成为 JavaScript 渲染函数的代码。
+ 完整版，vue.js，同时包含编译器和运行时的版本。 只包含运行时版，vue.runtime.js，用来创建 Vue 实例、渲染并处理虚拟 DOM 等的代码。基本上就是除去编译器的其它一切。  运行时 + 编译器 vs. 只包含运行时 如果你需要在客户端编译模板 (比如传入一个字符串给 template 选项，或挂载到一个元素上并以其 DOM 内部的 HTML 作为模板)，就将需要加上编译器，即完整版：
+// 需要编译器 new Vue({ template: &amp;#39;&amp;lt;div&amp;gt;{{ hi }}&amp;lt;/div&amp;gt;&amp;#39; }) // 不需要编译器 new Vue({ render (h) { return h(&amp;#39;div&amp;#39;, this.hi) } }) 当使用 vue-loader 或 vueify 的时候，*.vue 文件内部的模板会在构建时预编译成 JavaScript。你在最终打好的包里实际上是不需要编译器的，所以只用运行时版本即可。
+因为运行时版本相比完整版体积要小大约 30%，所以应该尽可能使用这个版本。如果仍然希望使用完整版，则需要在打包工具里配置一个别名：
+webpack module.exports = { // ... resolve: { alias: { &#39;vue$&#39;: &#39;vue/dist/vue.esm.js&#39; // 用 webpack 1 时需用 &#39;vue/dist/vue.</description>
+    </item>
+    
+    <item>
+      <title>浅析MVC.md</title>
+      <link>https://xna00.github.io/my-blog/posts/%E6%B5%85%E6%9E%90mvc/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/%E6%B5%85%E6%9E%90mvc/</guid>
+      <description>浅析MVC M V C  模型（Model） 用于封装与应用程序的业务逻辑相关的数据以及对数据的处理方法。“ Model ”有对数据直接访问的权力，例如对数据库的访问。“Model”不依赖“View”和“Controller”，也就是说， Model 不关心它会被如何显示或是如何被操作。但是 Model 中数据的变化一般会通过一种刷新机制被公布。为了实现这种机制，那些用于监视此 Model 的 View 必须事先在此 Model 上注册，从而，View 可以了解在数据 Model 上发生的改变。 **视图（View）**能够实现数据有目的的显示（理论上，这不是必需的）。在 View 中一般没有程序上的逻辑。为了实现 View 上的刷新功能，View 需要访问它监视的数据模型（Model），因此应该事先在被它监视的数据那里注册。 **控制器（Controller）**起到不同层面间的组织作用，用于控制应用程序的流程。它处理事件并作出响应。“事件”包括用户的行为和数据 Model 上的改变。  一个通过 JavaScript所实现的基于 MVC 模型
+/** 模擬 Model, View, Controller */ var M = {}, V = {}, C = {}; /** Model 負責存放資料 */ M.data = &amp;#34;hello world&amp;#34;; /** View 負責將資料輸出到螢幕上 */ V.render = (M) =&amp;gt; { alert(M.data); } /** Controller 作為一個 M 和 V 的橋樑 */ C.</description>
+    </item>
+    
+    <item>
+      <title>浅析URL.md</title>
+      <link>https://xna00.github.io/my-blog/posts/%E6%B5%85%E6%9E%90url/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/%E6%B5%85%E6%9E%90url/</guid>
+      <description>浅析URL URL的组成 URL，Uniform Resource Locator，统一资源定位器
+ 协议 域名或IP 端口号 路径 查询字符串 锚点，锚点不会发送给服务器！  DNS DNS，Domain Name System，域名系统，将域名转换为IP
+可以使用nslook 域名查询
+IP IP用来定位一台计算机
+ping IP/域名
+域名  com是顶级域名 xxxx.com是二级域名，俗称一级域名 yyyy.xxxx.com是三集域名，俗称二级域名  </description>
+    </item>
+    
+    <item>
+      <title>虚拟 DOM 和 DOM diff.md</title>
+      <link>https://xna00.github.io/my-blog/posts/%E8%99%9A%E6%8B%9F-dom-%E5%92%8C-dom-diff/</link>
+      <pubDate>Thu, 15 Oct 2020 14:24:13 +0800</pubDate>
+      
+      <guid>https://xna00.github.io/my-blog/posts/%E8%99%9A%E6%8B%9F-dom-%E5%92%8C-dom-diff/</guid>
+      <description>虚拟 DOM 和 DOM diff 虚拟 DOM 是什么 虚拟dom，与真实dom相对，是JS对象
+虚拟DOM的优点 在某些情况下，dom操作的速度较快
+ 将多次操作合并为一次，如添加1000个节点 借助DOM diff将多余的操作省去，如添加1000个节点，但只有10个是新增的  虚拟DOM的缺点 在大量DOM操作时，会造成卡顿，因为进行的额外计算太多了
+DOM diff是什么 DOM diff是虚拟DOM的对比算法
+DOM diff的优点 通过DOM diff，可以简化DOM操作
+DOM diff的问题 DOM diff的算法可能有Bug,Vue key的作用</description>
+    </item>
+    
+  </channel>
+</rss>
